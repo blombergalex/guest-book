@@ -1,5 +1,5 @@
 import {render, screen} from "@testing-library/react"
-import Header from '.'
+import Header from "."
 
 test("To see if the header text is rendered correctly and also as an h1", () => {
     render(<Header />)

@@ -12,7 +12,9 @@ test("Check that the subtitle is under the header and rendered correctly", () =>
 })
 
 test("Check that the h3 element has the correct class", () => {
-    render(<SubTitle />)
+    const mockData:string = "Leave a message down below..."
+    
+    render(<SubTitle  text= {mockData} />)
 
     const headerText = screen.getByRole("heading",{ level: 3})
     
