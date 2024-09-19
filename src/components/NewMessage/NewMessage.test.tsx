@@ -55,6 +55,7 @@ describe("NewMessage Component", () => {
         const longMessage = "A".repeat(1000)
         
         fireEvent.change(inputElement, { target: { value: longMessage}})
+        
         fireEvent.click(sendButton)
 
         expect(mockOnSend).toHaveBeenCalledWith(longMessage)
